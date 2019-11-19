@@ -44,19 +44,19 @@ function parseCommand(msg: Message, command: string, args: string[]) {
             break;
         }
 
-        // case 'echo': {
-        //     if (!isMod(sender)) return;
-        //
-        //     let sentence = args.join(" ");
-        //
-        //     msg.channel.send(`${sentence}`)
-        //         .then(r => {
-        //             console.log(`Echo ${msg.author.username}#${msg.author.discriminator}: ${sentence}!`)
-        //         });
-        //
-        //     msg.delete().then(r => console.log(`Deleted message ${r.id}, ${r.content}`));
-        //     break;
-        // }
+        case 'echo': {
+            if (!isMod(sender)) return;
+
+            let sentence = args.join(" ");
+
+            msg.channel.send(`${sentence}`)
+                .then(r => {
+                    console.log(`Echo ${msg.author.username}#${msg.author.discriminator}: ${sentence}!`)
+                });
+
+            msg.delete().then(r => console.log(`Deleted message ${r.id}, ${r.content}`));
+            break;
+        }
 
         case 'hello': {
             if (!isMod(sender)) return;
