@@ -2,10 +2,10 @@ import {client} from "./App";
 import {Message} from "discord.js";
 import {isMod, splitCommand} from "./utils";
 
-export function registerListeners() {
+export function registerCommandListeners() {
     client.on('message', checkMessage);
 
-    console.log("Registered listeners.");
+    console.log("Registered command listeners.");
 }
 
 function checkMessage(msg: Message) {
