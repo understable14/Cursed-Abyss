@@ -1,0 +1,11 @@
+{
+  "name": "cursed-abyss-bot",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node dist/App.js"
+  },
+  "dependencies": {
+    "discord.js": "^11.5.1"
+  }
+}
