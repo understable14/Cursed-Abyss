@@ -1,7 +1,7 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
-    "target": "es6",
+    "target": "es2017",
     "module": "commonjs",
     "outDir": "dist",
     "removeComments": true,
@@ -10,6 +10,7 @@
     "strictNullChecks": true,
     "noImplicitThis": true,
     "inlineSourceMap": true,
+    "inlineSources": true,
     "resolveJsonModule": true,
     "esModuleInterop": true
   },

@@ -6,6 +6,7 @@
     "start": "node dist/App.js"
   },
   "dependencies": {
-    "discord.js": "^11.5.1"
+    "discord.js": "^11.5.1",
+    "source-map-support": "^0.5.16"
   }
 }

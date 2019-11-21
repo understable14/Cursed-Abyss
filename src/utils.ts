@@ -23,5 +23,5 @@ export function splitCommand(msg: Message): string[] {
  * Check if this member has moderator privileges or not.
  */
 export function isMod(member: GuildMember): boolean {
-    return member.hasPermissions(['KICK_MEMBERS', 'BAN_MEMBERS']);
+    return member.hasPermission(['KICK_MEMBERS', 'BAN_MEMBERS']);
 }
